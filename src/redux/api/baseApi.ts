@@ -87,6 +87,8 @@ export const baseApi = createApi({
     "blog",
     "projects",
     "project",
+    "messages",
+    "message",
     "dashboardState",
   ],
   endpoints: () => ({}),

@@ -94,7 +94,7 @@ const DashboardOverview: React.FC = () => {
 
     fetchData();
   }, [data]);
-
+  console.log(projects);
   return (
     <>
       {isLoading && (

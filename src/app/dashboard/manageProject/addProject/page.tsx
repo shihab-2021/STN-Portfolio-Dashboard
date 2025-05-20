@@ -212,6 +212,11 @@ const AddProject: React.FC = () => {
                 />
               </div>
             </label>
+            {image && (
+              <div className="col-span-12 md:col-span-6">
+                <img src={image} alt="image" />
+              </div>
+            )}
           </div>
           <div className="grid grid-cols-12 gap-3 py-2">
             <div className="col-span-12 flex flex-col  md:col-span-6">

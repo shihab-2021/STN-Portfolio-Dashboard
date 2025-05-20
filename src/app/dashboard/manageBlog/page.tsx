@@ -71,7 +71,7 @@ const ManageBlog: React.FC = () => {
               blogs?.data?.map((blog: any, index: number) => (
                 <div
                   key={index}
-                  className="h-fit transition-all duration-300  rounded-lg backdrop-blur shadow-md hover:shadow-xl  relative group overflow-hidden font-[Arima]"
+                  className="h-fit transition-all duration-300  rounded-lg backdrop-blur shadow-md hover:shadow-xl  relative group overflow-hidden font-sansita"
                 >
                   <div className="p-6 rounded-lg">
                     <div className="w-16 h-16 bg-[var(--primaryColor3)] rounded-full absolute -right-5 -top-7">
@@ -80,7 +80,7 @@ const ManageBlog: React.FC = () => {
                         {index + 1}
                       </p>
                     </div>
-                    <div className=" h-44 flex flex-col justify-between font-[Arima]">
+                    <div className=" h-44 flex flex-col justify-between font-sansita">
                       <div className="mb-1">
                         <Link
                           href={`/dashboard/manageBlog/updateBlog/${blog?._id}`}

@@ -89,6 +89,8 @@ export const baseApi = createApi({
     "project",
     "messages",
     "message",
+    "skills",
+    "skill",
     "dashboardState",
   ],
   endpoints: () => ({}),

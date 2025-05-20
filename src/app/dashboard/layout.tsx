@@ -8,6 +8,7 @@ import { FaBlog, FaLaptopCode, FaMessage } from "react-icons/fa6";
 import { useAppDispatch } from "@/redux/hooks";
 import { logout } from "@/redux/features/auth/authSlice";
 import { useRouter } from "next/navigation";
+import { PiInfoLight } from "react-icons/pi";
 
 export default function DashboardLayout({
   children,
@@ -98,6 +99,15 @@ export default function DashboardLayout({
                         >
                           <FaMessage className="w-6 h-6 text-gray-500 flex-shrink-0 group-hover:text-gray-900 transition duration-75" />
                           <span className="ml-3">Manage Message</span>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/dashboard/managePortfolioInfo"
+                          className="text-base hover:text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-200 group"
+                        >
+                          <PiInfoLight className="w-6 h-6 text-gray-500 flex-shrink-0 group-hover:text-gray-900 transition duration-75" />
+                          <span className="ml-3">Manage Info</span>
                         </Link>
                       </li>
                       <li>
